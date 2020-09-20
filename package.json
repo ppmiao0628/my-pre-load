@@ -1,5 +1,5 @@
 {
-  "name": "my-pre-load",
+  "name": "pp-pre-load",
   "version": "1.0.0",
   "description": "资源预加载",
   "main": "index.js",

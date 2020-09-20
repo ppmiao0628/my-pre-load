@@ -4,9 +4,9 @@
 支持图片格式：(png|jpe?g|gif|svg|webp)
 
 ```
-npm install my-pre-load
+npm install pp-pre-load
 
-import preLoadRes from 'my-pre-load'
+import preLoadRes from 'pp-pre-load'
 
 preLoadRes('https://photo.tuchong.com/16133504/l/221041344.webp')
 .then(data=>{
