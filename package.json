@@ -2,7 +2,7 @@
   "name": "pp-pre-load",
   "version": "1.0.1",
   "description": "资源预加载",
-  "main": "/dist/index.min.js",
+  "main": "index.js",
   "scripts": {
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -17,6 +17,7 @@ const baseConfig = {
         filename: '[name].js',
         library: "preLoadRes",
         libraryExport: 'default',
+        libraryTarget: 'umd'
     },
     module: {
         rules: [{

@@ -1,5 +1,14 @@
-var preLoadRes;
-/******/ (() => { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["preLoadRes"] = factory();
+	else
+		root["preLoadRes"] = factory();
+})(self, function() {
+return /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ 963:
@@ -1322,6 +1331,8 @@ function preLoadRes(url) {
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (preLoadRes);
 })();
 
-preLoadRes = __webpack_exports__.default;
+__webpack_exports__ = __webpack_exports__.default;
+/******/ 	return __webpack_exports__;
 /******/ })()
 ;
+});
