@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="./dist/index.min.js"></script>
+<script>
+    let srcList = [
+        'https://photo.tuchong.com/16133504/l/221041344.webp',
+        'https://photo.tuchong.com/16133504/l/554422871.webp',
+        'https://photo.tuchong.com/16133504/l/589746361.webp',
+        'https://photo.tuchong.com/16133504/l/630510222.webp',
+        'https://photo.tuchong.com/16133504/l/301191363.webp',
+        'https://photo.tuchong.com/16133504/l/144101804.webp',
+        'https://photo.tuchong.com/16133504/l/198365495.webp',
+        'https://photo.tuchong.com/16133504/l/617402534.webp',
+        'https://photo.tuchong.com/16133504/l/319803609.webp'
+    ];
+    srcList.forEach(item => {
+        preLoadRes(item)
+            .then(data => {
+                console.log(data);
+            })
+    })
+</script>
+
+<body>
+
+</body>
+
+</html>

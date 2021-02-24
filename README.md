@@ -1,4 +1,4 @@
-# my-pre-load
+# pp-pre-load
 ##资源预加载
 
 支持图片格式：(png|jpe?g|gif|svg|webp)
