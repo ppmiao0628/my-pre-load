@@ -13,7 +13,6 @@ function preLoadRes(url) {
         }
         urlArr.map(item => {
             xhrUrl(item).then(data => {
-                console.log(count, data);
                 count++;
                 if (count >= len) {
                     console.log(data);
@@ -47,7 +46,7 @@ function xhrUrl(url) {
              * 4 HTTP 响应已经完全接收。
              */
             if (xhr.readyState == 4) {
-                resolve('done');
+                resolve('preload done!');
             }
         };
         xhr.onprogress = (e) => {

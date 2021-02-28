@@ -2042,7 +2042,6 @@ function preLoadRes(url) {
 
     urlArr.map(function (item) {
       xhrUrl(item).then(function (data) {
-        console.log(count, data);
         count++;
 
         if (count >= len) {
@@ -2061,7 +2060,7 @@ function xhrUrl(url) {
 
     xhr.onreadystatechange = function () {
       if (xhr.readyState == 4) {
-        resolve('done');
+        resolve('preload done!');
       }
     };
 
