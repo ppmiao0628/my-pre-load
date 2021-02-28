@@ -13,7 +13,7 @@ preLoadRes('https://photo.tuchong.com/16133504/l/221041344.webp')
     console.log(data);
 })
 ```
-## 1.1.2 update
+## 1.2.1 update
 支持传入数组请求资源，会在全部资源请求结束后执行then方法
 ```JavaScript
 
