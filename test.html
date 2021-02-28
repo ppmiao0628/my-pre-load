@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<script src="./dist/index.min.js"></script>
+<script src="./dist/index.js"></script>
 <script>
     let srcList = [
         'https://photo.tuchong.com/16133504/l/221041344.webp',
@@ -17,14 +17,12 @@
         'https://photo.tuchong.com/16133504/l/144101804.webp',
         'https://photo.tuchong.com/16133504/l/198365495.webp',
         'https://photo.tuchong.com/16133504/l/617402534.webp',
-        'https://photo.tuchong.com/16133504/l/319803609.webp'
+        'https://photo.tuchong.com/16133504/l/3198036091.webp'
     ];
-    srcList.forEach(item => {
-        preLoadRes(item)
-            .then(data => {
-                console.log(data);
-            })
-    })
+    preLoadRes(srcList)
+        .then(data => {
+            // console.log(data);
+        });
 </script>
 
 <body>
