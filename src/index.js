@@ -1,4 +1,3 @@
-import { reject } from "core-js/fn/promise";
 
 function preLoadRes(url) {
     return new Promise((resolve) => {
@@ -25,7 +24,7 @@ function preLoadRes(url) {
 function xhrUrl(url) {
     return new Promise(resolve => {
         // 如果是图片，可以用image处理
-        const imgReg = /\.(png|jpe?g|gif|svg|webp)(\?.*)?$/;
+        // const imgReg = /\.(png|jpe?g|gif|svg|webp)(\?.*)?$/;
         // const fileReg = /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/;
         // if (imgReg.test(url)) {
         //     const img = new Image();

@@ -7,26 +7,35 @@
     <title>Document</title>
 </head>
 <script src="./dist/index.js"></script>
+
 <script>
-    let srcList = [
-        'https://photo.tuchong.com/16133504/l/221041344.webp',
-        'https://photo.tuchong.com/16133504/l/554422871.webp',
-        'https://photo.tuchong.com/16133504/l/589746361.webp',
-        'https://photo.tuchong.com/16133504/l/630510222.webp',
-        'https://photo.tuchong.com/16133504/l/301191363.webp',
-        'https://photo.tuchong.com/16133504/l/144101804.webp',
-        'https://photo.tuchong.com/16133504/l/198365495.webp',
-        'https://photo.tuchong.com/16133504/l/617402534.webp',
-        'https://photo.tuchong.com/16133504/l/3198036091.webp'
-    ];
-    preLoadRes(srcList)
-        .then(data => {
-            // console.log(data);
-        });
+    window.onload = () => {
+        let srcList = [
+            'https://photo.tuchong.com/1890400/f/390796834.jpg',
+            'https://photo.tuchong.com/1890400/f/585831730.jpg',
+            'https://photo.tuchong.com/1890400/f/542381524.jpg',
+            'https://photo.tuchong.com/1890400/f/145626362.jpg',
+            'https://photo.tuchong.com/1890400/f/456594721.jpg',
+        ];
+        preLoadRes(srcList)
+            .then(data => {
+                // console.log(data);
+            });
+        let app = document.getElementById('app');
+        console.log(app);
+        app.addEventListener('click', () => {
+            let img = new Image();
+            img.src = 'https://photo.tuchong.com/1890400/f/390796834.jpg';
+            img.onload = () => {
+
+            };
+            app.appendChild(img);
+        })
+    }
 </script>
 
 <body>
-
+    <div id="app">click me</div>
 </body>
 
 </html>

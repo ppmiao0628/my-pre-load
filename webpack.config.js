@@ -17,7 +17,13 @@ const baseConfig = {
         filename: '[name].js',
         library: "preLoadRes",
         libraryExport: 'default',
-        libraryTarget: 'umd'
+        libraryTarget: 'umd',
+        auxiliaryComment: {
+            root: 'Root Comment',
+            commonjs: 'CommonJS Comment',
+            commonjs2: 'CommonJS2 Comment',
+            amd: 'AMD Comment'
+        }
     },
     module: {
         rules: [{
