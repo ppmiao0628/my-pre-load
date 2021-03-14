@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const TerserPlugin = require('terser-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin")
+const CopyRightWebpackPlugin = require('./plugins/copyright-webpack-plugin.js');
 
 
 const baseConfig = {
@@ -37,6 +37,7 @@ const baseConfig = {
     },
     plugins: [
         new CleanWebpackPlugin(),
+        new CopyRightWebpackPlugin(),
         // new webpack.optimize.CommonsChunkPlugin({
         //     name: 'react',
         //     minChunks: Infinity
